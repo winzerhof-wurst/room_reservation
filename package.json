@@ -1,0 +1,24 @@
+{
+  "name": "winzerhofwurst-room-reservation",
+  "version": "0.0.1",
+  "description": "Guest and hotel room reservation system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winzerhof-wurst/room_reservation.git"
+  },
+  "keywords": [
+    "hotel",
+    "room",
+    "reservation"
+  ],
+  "author": "Christoph Wurst",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/winzerhof-wurst/room_reservation/issues"
+  },
+  "homepage": "https://github.com/winzerhof-wurst/room_reservation#readme"
+}

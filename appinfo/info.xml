@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>room_reservation</id>
+	<name>Room Reservation</name>
+	<summary>IMAP web client</summary>
+	<description>Guest and hotel room reservation system</description>
+	<version>0.0.1</version>
+	<licence>agpl</licence>
+	<author>Christoph Wurst</author>
+	<namespace>RoomReservation</namespace>
+	<category>tool</category>
+	<dependencies>
+		<php min-version="7.3" max-version="7.3" />
+		<nextcloud min-version="16" max-version="17" />
+	</dependencies>
+</info>

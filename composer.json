@@ -1,0 +1,13 @@
+{
+    "name": "winzerhofwurst/room_reservation",
+    "description": "Guest and hotel room reservation system",
+    "type": "library",
+    "license": "AGPL-v3.0",
+    "authors": [
+        {
+            "name": "Christoph Wurst",
+            "email": "christoph@winzerhof-wurst.at"
+        }
+    ],
+    "require": {}
+}
