@@ -12,6 +12,7 @@
 	<category>tool</category>
 	<dependencies>
 		<php min-version="7.3" max-version="7.3" />
+		<database>mysql</database>
 		<nextcloud min-version="16" max-version="17" />
 	</dependencies>
 </info>
