@@ -1,1 +1,15 @@
+# Composer
+composer.phar
 /vendor/
+
+# test coverage
+tests/clover.xml
+
+# Node.js modules
+node_modules/
+
+/js
+
+# packaged app
+build/artifacts
+

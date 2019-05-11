@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
 	<id>room_reservation</id>
 	<name>Room Reservation</name>
 	<summary>IMAP web client</summary>
@@ -11,8 +11,15 @@
 	<namespace>RoomReservation</namespace>
 	<category>tool</category>
 	<dependencies>
-		<php min-version="7.3" max-version="7.3" />
+		<php min-version="7.3" max-version="7.3"/>
 		<database>mysql</database>
-		<nextcloud min-version="16" max-version="17" />
+		<nextcloud min-version="16" max-version="17"/>
 	</dependencies>
+	<navigations>
+		<navigation>
+			<name>Reservations</name>
+			<route>room_reservation.page.index</route>
+			<order>10</order>
+		</navigation>
+	</navigations>
 </info>
