@@ -9,5 +9,15 @@
             "email": "christoph@winzerhof-wurst.at"
         }
     ],
-    "require": {}
+    "require": {
+        "christophwurst/nextcloud_testing": "^0.6.0"
+    },
+    "scripts": {
+        "lint": "find . -name \\*.php -not -path './vendor/*' -exec php -l \"{}\" \\;",
+        "test": "phpunit -c tests/phpunit.xml --fail-on-warning",
+        "test:integration": "phpunit -c tests/phpunit.xml tests/Integration --fail-on-warning",
+        "test:integration:dev": "phpunit -c tests/phpunit.xml tests/Integration --no-coverage --fail-on-warning",
+        "test:unit": "phpunit -c tests/phpunit.xml tests/Unit --fail-on-warning",
+        "test:unit:dev": "phpunit -c tests/phpunit.xml tests/Unit --no-coverage --fail-on-warning"
+    }
 }
