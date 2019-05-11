@@ -26,6 +26,7 @@
 		computed: {
 			config () {
 				return {
+					defaultView: 'month',
 					editable: false,
 					header: false,
 					selectable: false,
