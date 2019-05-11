@@ -2,7 +2,7 @@
 	<Content app-name="room_reservation">
 		<Navigation></Navigation>
 		<AppContent>
-			todoo
+			<h2>{{ t('room_reservation', 'Reservation Dashboard') }}</h2>
 		</AppContent>
 	</Content>
 </template>

@@ -6,12 +6,18 @@ import mutations from './mutations'
 
 Vue.use(Vuex)
 
-export const getters = {}
+export const getters = {
+	getRequests: state => () => {
+		return state.requestList.map(id => state.requests[id])
+	},
+}
 
 export default new Vuex.Store({
 	strict: process.env.NODE_ENV !== 'production',
 	state: {
 		rooms: {},
+		requests: {},
+		requestList: [],
 	},
 	getters,
 	mutations,

@@ -18,6 +18,18 @@ Vue.mixin({
 	},
 })
 
+const rooms = OCP.InitialState.loadState(
+	'room_reservation',
+	'rooms',
+)
+const requests = OCP.InitialState.loadState(
+	'room_reservation',
+	'requests',
+)
+
+store.commit('setRooms', {rooms})
+store.commit('setRequests', {requests})
+
 new Vue({
 	el: '#content',
 	router,
