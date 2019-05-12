@@ -2,12 +2,17 @@
 	<Content app-name="room_reservation">
 		<Navigation></Navigation>
 		<AppContent>
-			<h2>{{ t('room_reservation', 'Requests') }}</h2>
-			<ul>
-				<li v-for="reservation in reservations" :key="reservation.id">
-					{{ reservation.id }}
-				</li>
-			</ul>
+			<div id="app-content-wrapper">
+				<div class="app-content-list">
+					<Request v-for="request in requests"
+							 :key="request.id"
+							 :request="request">
+					</Request>
+				</div>
+				<div class="app-content-detail">
+					todo
+				</div>
+			</div>
 		</AppContent>
 	</Content>
 </template>
@@ -17,6 +22,7 @@
 	import Content from 'nextcloud-vue/dist/Components/Content'
 
 	import Navigation from '../components/Navigation'
+	import Request from '../components/Request'
 
 	export default {
 		name: "Requests",
@@ -24,9 +30,10 @@
 			AppContent,
 			Content,
 			Navigation,
+			Request,
 		},
 		computed: {
-			reservations () {
+			requests () {
 				return this.$store.getters.getRequests()
 			}
 		}

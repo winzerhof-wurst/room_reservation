@@ -1,6 +1,6 @@
 import {generateFilePath} from 'nextcloud-server/dist/router'
 import {sync} from 'vuex-router-sync'
-import {translate} from 'nextcloud-server/dist/l10n'
+import {translate, translatePlural} from 'nextcloud-server/dist/l10n'
 import Vue from 'vue'
 
 import App from './App'
@@ -15,6 +15,7 @@ sync(store, router)
 Vue.mixin({
 	methods: {
 		t: translate,
+		n: translatePlural,
 	},
 })
 
