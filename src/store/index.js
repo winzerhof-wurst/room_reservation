@@ -10,6 +10,12 @@ export const getters = {
 	getRequests: state => () => {
 		return state.requestList.map(id => state.requests[id])
 	},
+	getRequest: state => id => {
+		return state.requests[id]
+	},
+	getRoom: state => id => {
+		return state.rooms[id]
+	},
 }
 
 export default new Vuex.Store({

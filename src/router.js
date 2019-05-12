@@ -33,5 +33,10 @@ export default new Router({
 			name: 'requests',
 			component: Requests,
 		},
+		{
+			path: '/requests/:id',
+			name: 'request',
+			component: Requests,
+		},
 	],
 })

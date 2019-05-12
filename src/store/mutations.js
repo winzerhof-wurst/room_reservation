@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 export default {
 	setRooms (state, {rooms}) {
+		console.info(rooms)
 		Vue.set(state, 'rooms', {})
 
 		rooms.forEach(room => Vue.set(state.rooms, room.id, room))

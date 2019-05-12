@@ -9,9 +9,9 @@
 							 :request="request">
 					</Request>
 				</div>
-				<div class="app-content-detail">
-					todo
-				</div>
+				<RequestDetails v-if="detailRequest"
+								:request="detailRequest">
+				</RequestDetails>
 			</div>
 		</AppContent>
 	</Content>
@@ -23,6 +23,7 @@
 
 	import Navigation from '../components/Navigation'
 	import Request from '../components/Request'
+	import RequestDetails from '../components/RequestDetails'
 
 	export default {
 		name: "Requests",
@@ -31,10 +32,16 @@
 			Content,
 			Navigation,
 			Request,
+			RequestDetails,
 		},
 		computed: {
 			requests () {
 				return this.$store.getters.getRequests()
+			},
+			detailRequest () {
+				if (this.$route.params.id) {
+					return this.$store.getters.getRequest(this.$route.params.id)
+				}
 			}
 		}
 	}

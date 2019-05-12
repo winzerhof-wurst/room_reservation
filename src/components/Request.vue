@@ -1,5 +1,5 @@
 <template>
-	<a href="#"
+	<router-link :to="{name: 'request', params: { id: request.id }}"
 	   class="app-content-list-item"
 	   @click.prevent="click">
 		<div class="app-content-list-item-icon"
@@ -16,7 +16,7 @@
 			{{ localeDate(request.startDate) }}-{{ localeDate(request.endDate)
 			}}
 		</div>
-	</a>
+	</router-link>
 </template>
 
 <script>
@@ -32,7 +32,6 @@
 			nrOfDays () {
 				const start = new Date(this.request.startDate)
 				const end = new Date(this.request.endDate)
-				console.info(end - start)
 				return Math.floor((end - start) / (60 * 60 * 24 * 1000))
 			}
 		},

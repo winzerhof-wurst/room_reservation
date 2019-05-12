@@ -53,6 +53,7 @@
 					icon: 'icon-info',
 					router: {
 						name: 'requests',
+						exact: false,
 					},
 				}
 			}
