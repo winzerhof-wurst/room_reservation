@@ -41,7 +41,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "style-loader": "^0.23.1",
-    "vue-loader": "^15.7.0",
+    "vue-loader": "^15.7.1",
     "vue-server-renderer": "^2.6.10",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.35.2",
