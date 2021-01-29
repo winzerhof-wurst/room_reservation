@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "christophwurst/nextcloud_testing": "^0.6.0 || ^0.7.0 || ^0.9.0 || ^0.10.0"
+        "christophwurst/nextcloud_testing": "^0.6.0 || ^0.7.0 || ^0.9.0 || ^0.10.0 || ^0.12.0"
     },
     "scripts": {
         "lint": "find . -name \\*.php -not -path './vendor/*' -exec php -l \"{}\" \\;",
