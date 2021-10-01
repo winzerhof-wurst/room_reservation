@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/winzerhof-wurst/room_reservation#readme",
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.1",
     "nextcloud-server": "^0.15.10",
     "nextcloud-vue": "^0.13.0",
     "vue": "^2.6.11",
